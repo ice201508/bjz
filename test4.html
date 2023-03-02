@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr1 = [{ name: 'Facebook', age: 24 }, { name: 'Github', age: 18 }, { name: 'OpenAI', age: 18 }];
+        const arr2 = [{ name: 'Google', age: 24 }, { name: 'Copilot', age: 20 }, { name: 'John', age: 24 }];
+
+        function groupByAge(arr1, arr2) {
+            const arr = [...arr1, ...arr2]
+            let map = {}
+            // console.log(arr)
+            arr.forEach((item) => {
+                let name  = item.age
+                if(!map[name]) {
+                    map[name] = []
+                }
+                map[name].push(item)
+            })
+            return map
+        }
+
+        console.log(groupByAge(arr1, arr2))
+    </script>
+</body>
+
+</html>

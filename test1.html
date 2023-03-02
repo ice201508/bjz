@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .contain {
+            height: 32px;
+            margin-top: 400px;
+            background-color: #262F3E;
+            padding: 16px;
+        }
+       .contain h1 {
+        float: left;
+        height: 32px;
+        width: 140px;
+        font-size: 24px;
+        font-weight: 500;
+        /* background-color: pink; */
+        color: #fff;
+       }
+       .contain .left {
+        float: left;
+        /* padding: 8px */
+        list-style: none;
+        color: #C1C6C8;
+        margin: 9px 0;
+       }
+       .contain .left li {
+        float: left;
+        font-size: 14px;
+        padding: 0 18px;
+       }
+       .contain .left li:nth-child(2) {
+        border-right: #C1C6C8 1px solid;
+       }
+       .contain .left li:nth-child(2) i {
+        font-size: 10px;
+       }
+       .contain .left li:nth-child(6) {
+        font-size: 20px;
+        line-height: 10px;
+       }
+       .contain .left li:nth-child(7) {
+        font-size: 20px;
+        line-height: 16px;
+       }
+       .contain .right {
+        float: right;
+        list-style: none;
+        color: #C1C6C8;
+        margin: 9px 0;
+       }
+       .contain .right li {
+        float: left;
+        font-size: 14px;
+        padding: 0 18px;
+       }
+       .contain .left li:nth-child(4) i {
+        font-size: 10px;
+       }
+       .contain .left li:nth-child(5) i {
+        font-size: 10px;
+       }
+       .contain .right li:last-child img {
+        width: 20px;
+        height: 20px;
+        /* vertical-align: middle; */
+       }
+       .contain .right li:last-child span {
+        display: inline-block;
+        width: 140px;
+        /* background-color: aqua; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+       }
+       .contain .right li:last-child i {
+        font-size: 10px;
+       }
+       .contain .right li:nth-child(2) {
+        position: relative;
+        /* background-color: aquamarine; */
+       }
+       .contain .right li:nth-child(2)::after {
+        content: "16";
+        position: absolute;
+        left: 24px;
+        bottom: 8px;
+        width: 24px;
+        height: 16px;
+        text-align: center;
+        line-height: 16px;
+        border-radius: 8px;
+        background-color: rgb(5, 105, 211);
+       }
+    </style>
+</head>
+<body>
+    <div class="contain">
+       <h1>一体化平台</h1>
+       <ul class="left">
+        <li>总览</li>
+        <li>云产品 <i class="fa-solid fa-angle-down"></i></li>
+        <li>云服务器</li>
+        <li>域名服务</li>
+        <li>网站备案</li>
+        <li><i>.</i> <i>.</i> <i>.</i></li>
+        <li>+</li>
+       </ul>
+       <ul class="right">
+        <li><i class="fa-sharp fa-solid fa-qrcode"></i></li>
+        <li><i class="fa-sharp fa-regular fa-envelope"></i></li>
+        <li>帮助</li>
+        <li>工单 <i class="fa-solid fa-angle-down"></i></li>
+        <li>费用 <i class="fa-solid fa-angle-down"></i></li>
+        <li>
+            <img src="https://i.ibb.co/FJGtc8J/user-normal.png" alt="">
+            <span>aasdsadasascasdasdadasdasd</span>
+            <i class="fa-solid fa-angle-down"></i>
+        </li>
+       </ul>
+    </div>
+</body>
+</html>
